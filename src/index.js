@@ -48,7 +48,7 @@ export const createStructure = async () => {
   await client.query(`
     CREATE TABLE IF NOT EXISTS books(
       id SERIAL PRIMARY KEY,
-      title VARCHAR (30) UNIQUE NOT NULL,
+      title VARCHAR (30) NOT NULL,
       userid INTEGER NOT NULL,
       authorid INTEGER NOT NULL,
       categoryid INTEGER NOT NULL,
